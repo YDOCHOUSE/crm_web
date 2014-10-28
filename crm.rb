@@ -1,3 +1,4 @@
+require_relative 'contact'
 require 'sinatra'
 
 get '/' do 
@@ -6,4 +7,11 @@ get '/' do
 end
 
 
+get '/contacts' do
+	erb :contacts
+end
 
+
+post '/contacts' do
+   erb :contacts
+end
