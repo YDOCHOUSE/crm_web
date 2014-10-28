@@ -3,11 +3,11 @@
 		<header>
 		</header>
 		<body>
-			<h1>Welcome to <%= @crm_app_name %></h1>
-			<p>Main menu</p>
+			<h1>Your Contacts!</h1>
 			<ul>
- 		    	<li><a href="/contacts">View all contacts</a></li>
+			<% @contacts.each do |contact| %>
+  				<li><%= contact.first_name %> <%= contact.last_name %></li>
+			<% end %>
 			</ul>
-		
 		</body>
 	</html>
