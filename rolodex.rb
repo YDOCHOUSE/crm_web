@@ -23,11 +23,8 @@ class Rolodex
   #   end
   # end
 
-    def get_contact_by_id(id)
-    retrieved_contact = nil
-    @contacts.each do |contact|
-      retrieved_contact = contact if contact.id == id
-    end
+  def get_contact_by_id(id)
+    retrieved_contact = @contacts.find  {|contact| contact.id == id}
     retrieved_contact
   end
 

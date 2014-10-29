@@ -4462,7 +4462,7 @@ input[type="submit"].btn.btn-mini {
   margin-top: 0;
 }
 
-.navbar-form {
+.  {
   margin-bottom: 0;
   *zoom: 1;
 }
@@ -5123,6 +5123,7 @@ input[type="submit"].btn.btn-mini {
   text-align: center;
   list-style: none;
   *zoom: 1;
+  y-position: 25%;
 }
 
 .pager:before,
@@ -6169,11 +6170,6 @@ a.badge:focus {
 
 body {
 
-  background-image: url('/img/footer_lodyas.png');
+  background-color: #fff;
 
-}
-
-h1 {
-
-  color: #f4eeb5;
 }

@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="stylesheet" href="/css/bootstrap.css">
-  <link href="/css/bootstrap-responsive.css" rel="stylesheet"
-  <title></title>
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title></title>
   </head>
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <nav>
+            <ul>
+              <li><a href="/"><%= @crm_app_name %></a></li>
+              <li><a href="/contacts">View All Contacts</a></li>
+              <li><a href="/contacts/new">Add a Contact</a></li>
+            </ul>   
+          </nav>
+        </div>
+        <div class="col-md-8">
+          <%= yield %>
+        </div>
+      </div>  
+    </div>
     <!-- BootStrap jquery shit -->
     <script src="/js/bootstrap.min.js"></script>
   </body>
