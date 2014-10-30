@@ -1,36 +1,101 @@
-h1 {
-
-  color: #f4eeb5;
+body {
+  background-color: #fff;
 }
 
-#cssmenu {
-  background: #333;
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-  width: 10em;
-  height: 500px;
-  float: clear;
-}
-
-#cssmenu li {
-  font: 67.5% "Helvetica", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-#cssmenu a {
-  background: #333;
-  border-bottom: 1px solid #393939;
-  color: #ccc;
-  display: block;
-  margin: 0;
-  padding: 8px 12px;
+.navlinks a  {
+  
   text-decoration: none;
-  font-weight: normal;
+  font-family: "Helvetica";
 }
-#cssmenu a:hover {
-  background: #2580a2 url("images/hover.gif") left center no-repeat;
+
+.navbar {
+
+
+  background-color: #333;
+  width: 250px;
+  height: 500px;
+  border-radius: 5%;
+}
+
+.navlinks {
+
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 4em;
+  margin-left: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navlinks li {
+
+  list-style: none;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin: 10px 10px;
+  font-color: #fff;
+}
+
+
+.pager {
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+  *zoom: 1;
+  y-position: 25%;
+}
+
+.pager:before,
+.pager:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.pager:after {
+  clear: both;
+}
+
+.pager li {
+  display: inline;
+}
+
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #999999;
+  cursor: default;
+  background-color: #fff;
+}
+
+.navlinks a:visited {
   color: #fff;
-  padding-bottom: 8px;
 }

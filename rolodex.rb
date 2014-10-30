@@ -43,7 +43,6 @@ class Rolodex
 
   def delete_contact(contact_to_delete)
     @contacts.delete(contact_to_delete)
-    puts "Deleted!".bg_red
   end
 
 end
