@@ -28,18 +28,18 @@ class Rolodex
     retrieved_contact
   end
 
-  def update_contact id, first_name, last_name, email, notes
+  # def update_contact id, first_name, last_name, email, notes
     
-    contact = get_contact_by_id(id)
+  #   contact = get_contact_by_id(id)
     
-    if contact
-      contact.first_name = first_name
-      contact.last_name  = last_name
-      contact.email      = email
-    end
+  #   if contact
+  #     contact.first_name = first_name
+  #     contact.last_name  = last_name
+  #     contact.email      = email
+  #   end
 
-    contact
-  end
+  #   contact
+  # end
 
   def delete_contact(contact_to_delete)
     @contacts.delete(contact_to_delete)
